@@ -12,6 +12,10 @@ def vcipher(string, key):
     for i in string:
         if i == " ":
             output = output + " "
+        elif i == ".":
+            output = output + "."
+        elif i == ",":
+            output = output + ","
         elif i in letters:
             shift = letters.index(currentkey)
             if letters.index(i) + shift >= 25:
@@ -38,6 +42,10 @@ def dvcipher(string, key):
     for i in string:
         if i == " ":
             output = output + " "
+        elif i == ".":
+            output = output + "."
+        elif i == ",":
+            output = output + ","
         elif i in letters:
             if letters.index(currentkey) != 0:
                 shift = letters.index(currentkey)
@@ -60,6 +68,6 @@ def dvcipher(string, key):
 
 #Main
 print("Vigenere Cipher Cracker | V0.2 | Made By WingwooGaming")
-print (vcipher("If he had anything confidential to say, he wrote it in cipher, that is, by so changing the order of the letters of the alphabet, that not a word could be made out.", "cryptii"))
-print (dvcipher("kw ft ail cewiaqvi tmcyqlgerxtt bq jyn# pm yimix qb ke axipmt# rwtb qu# zn lw kjrlvbvo vyc dklmt fd iam tgkrtka wh kft ttxjrztm# bjrr chb i yfps vwcnu zt filg fsi#", "cryptii"))
-
+string = input("What is the string to cipher? ")
+key = input("What is the key? ")
+print (vcipher(string, key))
