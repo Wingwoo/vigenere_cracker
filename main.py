@@ -83,7 +83,6 @@ def vciphercracker(string, known):
 
 #Main
 print("Vigenere Cipher Cracker | V0.3 | Made By WingwooGaming")
-#string = input("What is the string to cipher? ")
-#key = input("What is the key? ")
-print(dvcipher("Kw fg yyf rlakfkee eflhzbgerkrj vf qcp, fg npqkc kk gp tgryct, kfck gu, sw uf ajrlizli kfg fpfvp qw rjv jgkrgiq qw rjv yngfcscv, kfck lqk y yfpf tmwcb dv kcuc qlr.", "cry"))
-print (vciphercracker("Kw fg yyf rlakfkee eflhzbgerkrj vf qcp, fg npqkc kk gp tgryct, kfck gu, sw uf ajrlizli kfg fpfvp qw rjv jgkrgiq qw rjv yngfcscv, kfck lqk y yfpf tmwcb dv kcuc qlr.", "anything"))
+crack = input("What is the string to crack? ")
+key = input("What is a known good word? ")
+vciphercracker(crack, key)
